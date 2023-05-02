@@ -1,1 +1,1 @@
-## [Multimine](multimine.herokuapp.com)
+## [Multimine](https://multimine.herokuapp.com)
