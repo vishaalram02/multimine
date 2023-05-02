@@ -1,0 +1,97 @@
+.game-board {
+  background-color: var(--purple2);
+
+  display: grid;
+  grid-template-rows: repeat(16, 3.5vmin);
+  grid-template-columns: repeat(30, 3.5vmin);
+  grid-auto-rows: 0;
+  grid-auto-columns: 0;
+
+  padding: 5vw;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.game-board > * {
+  word-break: break-all;
+}
+
+
+.game-board-small {
+  background-color: var(--pink);
+  width: 31.5vmin;
+  height: 31.5vmin;
+
+  display: grid;
+  grid-template-rows: repeat(9, 3.5vmin);
+  grid-template-columns: repeat(9, 3.5vmin);
+  grid-auto-rows: 0;
+  grid-auto-columns: 0;
+
+  padding: 1.5vw;
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0 0 15px 2px gray;
+}
+
+.game-board-small > * {
+  word-break: break-all;
+}
+
+small h1 {
+  width: 31.5vmin;
+  align-self: center;
+}
+
+.game-board-medium {
+  background-color: var(--pink);
+  width: 56vmin;
+  height: 56vmin;
+
+  display: grid;
+  grid-template-rows: repeat(16, 3.5vmin);
+  grid-template-columns: repeat(16, 3.5vmin);
+  grid-auto-rows: 0;
+  grid-auto-columns: 0;
+
+  padding: 1.5vw;
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0 0 15px 2px gray;
+}
+
+.game-board-medium > * {
+  word-break: break-all;
+}
+
+.medium h1 {
+  width: 56vmin;
+}
+
+.game-board-large {
+  background-color: var(--pink);
+  width: 90vmin;
+  height: 48vmin;
+
+  display: grid;
+  grid-template-rows: repeat(16, 3vmin);
+  grid-template-columns: repeat(30, 3vmin);
+  grid-auto-rows: 0;
+  grid-auto-columns: 0;
+
+  padding: 1.5vw;
+  border-radius: 15px;
+  text-align: center;
+
+  box-shadow: 0 0 15px 2px gray;
+}
+
+.game-board-large > * {
+  word-break: break-all;
+}
+
+.large h1 {
+  width: 90vmin;
+}

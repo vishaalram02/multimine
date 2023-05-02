@@ -1,0 +1,26 @@
+.rulesBox {
+  margin: var(--sper) var(--mper) var(--sper) var(--mper);
+  background-color: var(--pink);
+  padding: 15px 32px 40px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 50px;
+
+  box-shadow: 0 0 15px 2px gray;
+
+
+  animation: fadeInAnimation 2s forwards;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+   }
+}

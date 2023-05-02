@@ -1,0 +1,87 @@
+.NewPostInput-input {
+  font-size: 18px;
+  padding: var(--s) var(--m);
+  padding-top: none;
+  padding-bottom: none;
+
+  width: 80%;
+}
+
+.NewPostInput-button {
+  height: 40px;
+  padding: var(--s) var(--m) var(--s) var(--m);
+  
+}
+
+
+
+:root {
+  --commonMargin: none; /* common variable */
+}
+
+.inputBox {
+  padding: 10px;
+  margin-bottom: 5px;
+
+}
+
+.NewPostInput-input {
+  flex-grow: 1;
+  border: var(--darkgrey) 1px solid;
+  border-radius: 15px;
+  transition: box-shadow 0.1s;
+  margin-left: var(--commonMargin);
+  margin-right: auto;
+  margin-top: 10px;
+}
+
+form {
+  flex-direction: column;
+  width: 100%;
+  text-align: left;
+  margin: auto;
+}
+
+input[type=checkbox] {
+  margin: 10px;
+  height: 15px;
+  width: 15px;
+
+  color: var(--primary);
+}
+
+div h3 {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}
+
+.NewPostInput-input:focus-within {
+  border-color: var(--primary--dim);
+  box-shadow: none;
+}
+
+.NewPostInput-button {
+  color: var(--black);
+  border: var(--pink) 1px solid;
+  opacity: 0.8;
+  border-radius: var(--s);
+  background: var(--pink);
+  transition: color 0.1s, background 0.1s;
+  margin-right: var(--commonMargin);
+  margin-top: 10px;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.NewPostInput-button:hover {
+  opacity: 1;
+}
+
+.NewPostInput-button:active {
+  opacity: 0.5;
+}
+
+.checkbox {
+  width: inherit;
+  /* add styling to box soon */
+}

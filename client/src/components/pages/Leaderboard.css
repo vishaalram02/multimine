@@ -1,0 +1,88 @@
+.scores {
+  background-color: var(--pink);
+  margin: 25px;
+  margin-top: 15px;
+  padding: 20px;
+  width: 28%;
+  height: 68vh;
+  border-radius: 30px;
+
+  box-shadow: 0 0 8px 1px gray;
+
+}
+
+.scores h1 {
+  margin: 2px;
+  font-size: 5vh;
+}
+
+.scores h3 {
+  margin: 10px;
+  font-size: 3vh;
+}
+
+table * {
+  font-size: 2vh;
+}
+
+td:nth-child(1) {
+  width: 40%;
+  }
+
+/* the second */
+td:nth-child(2) {
+  width: 35%;
+}
+
+/* the third */
+td:nth-child(3) {
+  width: 25%;
+ }
+
+.header * {
+  font-size: 2.2vh;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.leaderTitle {
+  margin-bottom: 0;
+  margin-top: 40px;
+  font-size: 5vh;
+  font-weight: lighter;
+
+  color: rgb(82, 82, 82)
+}
+.scoreHolder {
+  justify-content: space-between;
+  overflow: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  animation: fadeInAnimation 2s forwards;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+   }
+}
+
+
+
+a {
+    color: var(--black);
+}
+
+.scrollTable {
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+
+}

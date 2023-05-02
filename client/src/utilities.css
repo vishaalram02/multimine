@@ -1,0 +1,142 @@
+/**
+* Welcome to your ✨𝔲𝔱𝔦𝔩𝔦𝔱𝔶 𝔰𝔱𝔶𝔩𝔢𝔰✨!
+* This file includes utility classes that are super simple
+* and can be used to add general styles; variable definitions
+* for colors; and styles to html, body, and other high level
+* DOMs.
+* 
+* All utility classes start with a `u-` and all do
+* one basic CSS thing (for example, making the font-weight
+* 600 for bolding) or are super generic.
+* 
+* This is 𝙉𝙊𝙏 the place to define classes for components or
+* do rigorous styling. You shoud not need to change this file
+* much after initial creation.
+*/
+
+/* TODO: REPLACE WITH YOUR OWN FONT! */
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Open+Sans:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@300&family=Tajawal:wght@200&display=swap");
+
+/*
+Potential scheme
+85FF9E
+A6F4DC
+AF90A9
+A05C7B
+944654
+b7b7b7ff
+
+Added colors
+*/
+
+:root {
+  --primary--dim: #3dbbff;
+  --progress-green: rgb(195, 255, 234);
+  --purple2: #c2bbf0;
+  --primary3: #ffffff;
+  --darkgrey: #575757;
+  --medgrey: #acacac;
+  --grey: #8f898c;
+  --white: #fff;
+
+  --purple1: #cdc1ff;
+  --purple3: #9084c2;
+  --primary: #cfbfe0;
+  --pink: rgb(237, 225, 255);
+  --pinkeu: 245, 239, 255;
+
+  --xs: 4px;
+  --s: 8px;
+  --m: 16px;
+  --l: 24px;
+
+  --sper: 5%;
+  --mper: 15%;
+  --lper: 25%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  /* font-family: "Hind", sans-serif; */
+  font-family: "Montserrat", sans-serif;
+  /* font-family: "Tajawal", sans-serif; */
+
+  font-weight: 300;
+
+  color: var(--black);
+}
+
+form {
+  flex-grow: 1;
+}
+
+.u-flex {
+  display: flex;
+}
+
+.u-flexColumn {
+  display: flex;
+  flex-direction: column;
+}
+
+.u-flex-justifyCenter {
+  justify-content: center;
+}
+
+.u-flex-alignCenter {
+  align-items: center;
+}
+
+.u-inlineBlock {
+  display: inline-block;
+}
+
+.u-bold {
+  font-weight: 600;
+}
+
+.u-textCenter {
+  text-align: center;
+}
+
+.u-relative {
+  position: relative;
+}
+
+.u-pointer {
+  cursor: pointer;
+}
+
+.u-link {
+  color: var(--primary);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.u-link:hover {
+  color: var(--primary--dim);
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(165, 165, 165);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(179, 179, 179);
+}

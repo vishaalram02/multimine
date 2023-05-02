@@ -1,0 +1,209 @@
+
+/* enclosing container */
+
+body {
+  background-color: var(--primary3);
+}
+
+.lobbyPage {
+  justify-content: space-around;
+  margin-left: 5%;
+  width: 90%;
+  margin-top: 13px;
+  height: calc(100vh - 120px);
+}
+
+
+/* left */
+
+.createRoom {
+  background-color: var(--purple1);
+
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  flex-direction: column;
+
+  border-radius: 20px;
+  opacity: 0.8;
+
+  box-shadow: 0 0 8px 1px gray;
+
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  margin: 10px;
+  height: 100%;
+}
+
+.createRoom > * {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.createRoom .NewPostInput-button {
+  width: 50%;
+  font-size: 1em;
+}
+
+.createRoom h2 {
+  margin: 20px;
+  text-align: center;
+}
+
+/* center */
+.lobbyBox {
+  background-color: var(--pink); /* Green */
+  border: none;
+  padding: 0 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  margin: 10px 4% 2% 4%;
+  height: 100%;
+
+  font-size: 16px;
+  border-radius: 20px;
+
+  flex-basis: 40%;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  box-shadow: 0 0 8px 1px gray;
+}
+
+.lobbyBox h2 {
+  margin-top: 30px;
+}
+
+/*making lobby boxes */
+.minesweeperButtonContainer {
+  margin: none;
+  height: calc(85vh - 120px);
+  overflow-y: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.minesweeperButtonContainer::-webkit-scrollbar {
+  display: none;
+}
+
+.minesweeperButton > * {
+  padding: none;
+  font-weight: 300;
+  overflow-wrap: break-word;
+}
+
+.minesweeperButton h3 {
+  font-size: 1.1em;
+}
+
+.minesweeperButton * {
+  margin: 0;
+}
+
+.minesweeperButtonContainer div a {
+  text-decoration: none;
+}
+
+.minesweeperButtonContainer div {
+  width: 20vmin;
+  display: inline-block;
+}
+
+.minesweeperButton {
+  background-color: lightgray;
+
+  margin: none;
+
+  height: 20vmin;
+  width: 20vmin;
+
+  border: 2px solid black;
+  color: black;
+
+  padding: 2vmin 2vmin;
+
+  font-size: 1.2vw;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+
+
+  border: 15px;
+
+  text-align: center;
+
+
+
+  cursor: pointer;
+
+  opacity: 0.8;
+}
+
+.open {
+  background-image: url("../../public/images/blocktemp.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  opacity: 0.8;
+} 
+.ongoing {
+  background-image: url("../../public/images/emptytemp2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.open:hover {
+  opacity: 1; 
+  color: var(--black);
+}
+
+.open:active {
+  opacity: 0.5;
+}
+
+.ongoing:hover {
+  opacity: 1; 
+  color: var(--black);
+}
+
+.ongoing:active {
+  opacity: 0.5;
+}
+
+.roomCount {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.roomCount h3 {
+  padding-bottom: 10px;
+}
+
+.rulesBox {
+  margin: var(--sper) var(--mper) var(--sper) var(--mper);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  border-radius: 50px;
+}
+
+.lobbyChat {
+  flex-basis: 25%;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+  box-shadow: 0 0 8px 1px gray;
+
+}
+
+.roomTitle {
+  color: var(--black);
+}
+
+h5 {
+  font-size: 0.8em;
+}

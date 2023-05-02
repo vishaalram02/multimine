@@ -1,0 +1,11 @@
+.App-container {
+  max-width: 960px;
+  padding: var(--m) var(--m);
+  margin: auto;
+}
+
+body {
+  background-color: rgb(255, 255, 206);
+  color: var(--black);
+
+}

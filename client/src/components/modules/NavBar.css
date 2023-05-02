@@ -1,0 +1,114 @@
+.NavBar-container {
+  padding: var(--s) var(--m);
+  background-color: white;
+  box-shadow: 0 0 12px 12px white;
+  height: 50px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  font-size: 20px;
+}
+
+.NavBar-title,
+.NavBar-title:visited {
+  position: absolute;
+  left: 50vw;
+  transform: translateX(-50%);
+  color: var(--black);
+  font-size: 45px;
+  margin-top: 10px;
+
+  font-family: "Montserrat", sans-serif;
+  /* font-style: italic; */
+  font-weight: bolder;
+
+  letter-spacing: 0.1em;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+
+  text-shadow: 0 1 30px var(--primary), 0 0 10px var(--purple2), 0 0 10px var(--purple3);
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+}
+
+.titleAnime:hover {
+  animation-name: squeeze;
+}
+@keyframes squeeze {
+  0% {
+    text-shadow: 0px 0px 3px var(--primary), 0px 0px 3px var(--purple2), 0 0 3px var(--purple3);
+  }
+  20% {
+    text-shadow: 1px 1px 3px var(--primary), 3px 3px 3px var(--purple2), -2px -2px 3px var(--purple3);
+  }
+
+  50% {
+    text-shadow: 5px 5px 3px var(--primary), 15px 15px 3px var(--purple2),
+      -10px -10px 3px var(--purple3);
+  }
+  80% {
+    text-shadow: 1px 1px 3px var(--primary), 3px 3px 3px var(--purple2), -2px -2px 3px var(--purple3);
+  }
+  100% {
+    text-shadow: 0px 0px 3px var(--primary), 0px 0px 3px var(--purple2), 0 0 3px var(--purple3);
+  }
+}
+
+.NavBar-linkContainer {
+  position: absolute;
+  top: 20px;
+  left: 30px;
+}
+.NavBar-linkContainer * {
+  margin-right: 15px;
+}
+
+.linkAnimation {
+  transition-duration: 0.5s;
+  font-weight: bold;
+}
+
+.linkAnimation:hover {
+ text-shadow: 0 0 3px var(--purple3);
+}
+
+.NavBar-link,
+.NavBar-link:visited {
+  color: var(--black);
+  opacity: 0.6;
+  text-decoration: none;
+}
+
+.NavBar-link:hover {
+  opacity: 0.8;
+}
+
+.NavBar-link + .NavBar-link {
+  margin-left: var(--m);
+}
+
+.spacer {
+  height: 33px;
+  display: inline-block;
+}
+
+.NavBar-login {
+  margin-top: none;
+  height: 100%;
+  margin-top: 5px;
+
+  box-shadow: 0 0 10px 2px gray;
+}
+
+.userStuff {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.userStuff > * {
+  margin-right: 10px;
+}

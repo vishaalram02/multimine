@@ -1,0 +1,36 @@
+.Chat-container {
+  height: 100%;
+  width: 100%;
+
+  align-items: center;
+  margin: none;
+}
+
+.Chat-newContainer {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 20vw;
+  margin-left: none;
+}
+
+.Chat-newContainer h4 {
+  padding-top: 3px;
+  padding-bottom: 3px;
+  font-size: 1.1em;
+}
+
+.Chat-historyContainer {
+  display: flex;
+  width: 100%;
+  flex-direction: column-reverse;
+  flex-grow: 1;
+  overflow-x: visible;
+  overflow-y: auto;
+  -ms-overflow-style: none; 
+  scrollbar-width: none;
+  padding-left: 5%;
+}
+
+.Chat-historyContainer::-webkit-scrollbar {
+  display: none;
+}

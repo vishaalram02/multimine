@@ -1,0 +1,128 @@
+.progressBars {
+  margin-top: 15px;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 100%;
+
+  height: 80vh;
+  overflow-y: scroll;
+
+  padding-left: 10px;
+  padding-right: 10px;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.progressBars::-webkit-scrollbar {
+  display: none;
+}
+
+.progressBars h3 {
+  margin-bottom: 0px;
+}
+
+.progressHolder {
+  padding: 4px;
+  height: 4vh;
+  border: 3px;
+  border-color: gray;
+  border-style: solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 90%;
+
+  border-radius: 20px;
+}
+
+.progressHolder div {
+  display: flex;
+  align-items: center;
+  background-color: var(--progress-green);
+  height: 4vh;
+  border-radius: 15px;
+}
+
+.progressHolder div h4 {
+  padding-left: 10px;
+}
+
+.progressHolderDone {
+  padding: 4px;
+  height: 4vh;
+  border: 3px;
+  border-color: gray;
+  border-style: solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  width: 90%;
+
+  border-radius: 20px;
+}
+
+.progressHolderDone div {
+  display: flex;
+  align-items: center;
+  background-color: var(--purple1);
+  height: 4vh;
+  border-radius: 15px;
+}
+.progressHolderDone div h4 {
+  padding-left: 10px;
+}
+
+.progressHolderFrozen {
+  padding: 4px;
+  height: 4vh;
+  border: 3px;
+  border-color: gray;
+  border-style: solid;
+  margin-top: 15px;
+  margin-bottom: 15px;
+
+  width: 90%;
+
+  border-radius: 20px;
+
+
+  animation: shake .2s;
+  animation-iteration-count: 3;
+}
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px)}
+  10% { transform: translate(-1px, -2px)}
+  20% { transform: translate(-3px, 0px)}
+  30% { transform: translate(3px, 2px)}
+  40% { transform: translate(1px, -1px)}
+  50% { transform: translate(-1px, 2px)}
+  60% { transform: translate(-3px, 1px)}
+  70% { transform: translate(3px, 1px)}
+  80% { transform: translate(-1px, -1px)}
+  90% { transform: translate(1px, 2px)}
+  100% { transform: translate(1px, -2px)}
+}
+
+
+
+
+
+.progressHolderFrozen div {
+  display: flex;
+  align-items: center;
+  background-color: rgb(167, 255, 255);
+  height: 4vh;
+  border-radius: 15px;
+}
+
+.progressHolderFrozen div h4 {
+  font-size: 2em;
+  width: 100%;
+  padding-left: 10px;
+}

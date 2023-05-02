@@ -1,0 +1,153 @@
+/* Overall */
+
+.profile {
+  width: 100%;
+  height: 70vh;
+  justify-content: space-between;
+  margin-top: var(--sper);
+  margin-bottom: var(--sper);
+
+  animation: fadeInAnimation 2s forwards;
+  animation-iteration-count: 1;
+  animation-duration: 2s;
+
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+   }
+}
+/* Left side */
+.profileContainer {
+  margin-left: var(--sper);
+  margin-right: var(--sper);
+
+  background-color: var(--pink);
+  padding: 30px;
+  border-radius: 50px;
+
+  box-shadow: 0 0 15px 2px gray;
+
+  max-width: 30%;
+}
+.Profile-name {
+  font-size: 6vh;
+  font-weight: 300;
+}
+
+.name {
+  align-self: center;
+  width: 100%;
+  font-size: 2vh;
+}
+
+/* Right side */
+
+.boardSummary {
+  width: 100%;
+  justify-content: space-between;
+
+  flex-direction: column;
+}
+
+.statContainer {
+  align-self: center;
+  margin: 0 10px 10px 10px;
+
+  background-color: var(--purple1);
+  padding: none;
+  border-radius: 0 50px 50px 50px;
+  width: 90%;
+  height: 90%;
+
+  box-shadow: 0 0 15px 2px gray;
+
+  z-index: 0;
+}
+
+.statContainer h1 {
+  text-align: center;
+  margin: 2px;
+  font-size: 4vh;
+}
+
+.statContainer h3 {
+  text-align: center;
+  margin: 2px;
+  font-size: 2.5vh;
+}
+
+.statContainer h2 {
+  font-size: 3vh;
+}
+
+.stats {
+  margin: 30px;
+  font-size: 2vh;
+}
+
+table {
+  width: 100%;
+}
+
+.tabBar {
+  margin: none;
+  width: 90%;
+  align-self: center;
+  z-index: 99999;
+
+}
+
+.tabItem {
+  border: none;
+
+
+  background-color: var(--pink);
+  z-index: 999;
+
+  padding: 16px 32px;
+
+  text-align: center;
+  font-size: 3vh;
+  transition-duration: 0.2s;
+  opacity: 1;
+  border-radius: 20px 20px 0 0;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+
+
+.tabItem:active {
+  opacity: 0.5;
+}
+
+.loadingPage {
+  font-size: large;
+  margin-left: 30px;
+  margin-top: 20px;
+  font-style: italic;
+}
+
+.scoresBox {
+  justify-content: space-between;
+}
+
+.profileScrollTable {
+  margin: 20px;
+  height: 36vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  width: 50%;
+}
+
+.header * {
+  font-weight: bolder;
+  text-decoration: underline;
+  font-size: 2.2vh;
+  text-align: left;
+}

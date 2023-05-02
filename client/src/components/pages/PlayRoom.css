@@ -1,0 +1,270 @@
+.displayBlock {
+  display: block;
+}
+
+.roomTitle {
+  position: absolute;
+  top: 10px;
+}
+
+/* leave room and start buttons */
+
+.leaveRoomButton {
+  position: absolute;
+  top: 10px;
+}
+
+.button {
+  border: none;
+  background-color: var(--primary);
+
+  margin-right: 0;
+  margin-left: auto;
+
+  height: 50px;
+  padding: 0 32px 0 32px;
+
+  text-align: center;
+  font-size: 16px;
+  transition-duration: 0.4s;
+  opacity: 0.8;
+  border-radius: 20px;
+
+  float: right;
+  margin: 20px;
+  z-index: 99;
+  top: 0;
+  right: 0;
+
+  font-family: "Montserrat", sans-serif;
+}
+
+.button:hover {
+  opacity: 1;
+}
+
+.button:active {
+  opacity: 0.5;
+}
+
+button {
+  font-size: 2vmin;
+  height: 8vmin;
+}
+.gameRoom h1 button h3 {
+  margin: 0;
+  font-weight: 100;
+}
+
+.button {
+  font-size: 90%;
+}
+
+/* overall structure */
+
+.gameRoom {
+  display: flex;
+  width: 100%;
+  height: 80vh;
+  align-items: center;
+  justify-content: space-evenly;
+  font-size: 2vmin;
+}
+
+.gameRoom.game-board {
+  flex-grow: 1;
+}
+
+.progressBars {
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+
+  height: 100%;
+
+}
+
+/* game chat (left side) */
+.gameChat {
+  flex-basis: 20%;
+  flex-grow: 0;
+  flex-shrink: 0;
+
+
+  height: 100%;
+
+  box-shadow: 0 0 8px 1px gray;
+}
+
+.gameChat h2 {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+/* game */
+
+.coverUp {
+  background-color: rgba(var(--pinkeu), 0.6);
+  position: absolute;
+
+  z-index: 999;
+  color: white;
+  font-size: 4em;
+}
+
+.coverUpGameOver {
+  background-color: rgba(203, 227, 255, 0.555);
+  position: absolute;
+
+  z-index: 999;
+  color: white;
+  font-size: 4em;
+}
+
+.coverUpGameOver h1 {
+  opacity: 0.8;
+  text-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.small {
+  width: 31.5vmin;
+  height: 31.5vmin;
+}
+
+.medium {
+  width: 56vmin;
+  height: 56vmin;
+}
+
+.large {
+  width: 90vmin;
+  height: 48vmin;
+}
+
+.coverUp h1 {
+  opacity: 0.8;
+  text-align: center;
+  align-self: center;
+  width: 100%;
+}
+
+.settings {
+  align-content: center;
+  justify-content: space-between;
+  margin: auto;
+
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.settings .info {
+  width: 100%;
+  padding-top: 3%;
+}
+
+.settings .button {
+  margin: none;
+  font-weight: normal;
+  font-family: "Montserrat", sans-serif;
+}
+
+.timeAndProgress {
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  height: 0;
+}
+
+.timeAndProgress h1 {
+  margin: none;
+}
+
+.best {
+  position: absolute;
+  top: 8%;
+  color: blueviolet;
+
+  left: 50%;
+  transform: translate(-50%, 0);
+  font-size: 5vw;
+
+  animation: poof 10s normal forwards;
+  /* animation-delay: 2s; */
+  /* text-shadow: -1px 1px 0 #000, 1px 1px 0 #000, 1px -1px #000, -1px -1px 0 #000; */
+  visibility: hidden;
+  /* text-shadow: 0 1 30px var(--primary), 0 0 10px var(--purple2), 0 0 10px var(--pink); */
+
+  /* font-style: italic; */
+
+  /* font-weight: bold; */
+  /* position: absolute; */
+  /* left: 50vw; */
+  /* transform: translateX(-50%); */
+  /* font-size: 40px; */
+  /* margin-top: 15px; */
+
+  font-family: "Montserrat", sans-serif;
+  font-style: italic;
+  font-weight: bold;
+
+  letter-spacing: 0.1em;
+  /* -webkit-text-fill-color: blue; */
+
+  text-shadow: 5px 5px var(--pink), 10px 10px var(--purple2), 15px 15px var(--primary);
+  /* animation-duration: 1s;
+  animation-iteration-count: 1; */
+}
+
+/* .best:hover {
+  animation-name: squeeze;
+}
+@keyframes squeeze {
+  0% {
+    text-shadow: 0px 0px 3px var(--primary), 0px 0px 3px var(--purple2), 0 0 3px var(--pink);
+  }
+  20% {
+    text-shadow: 1px 1px 3px var(--primary), 3px 3px 3px var(--purple2), -2px -2px 3px var(--pink);
+  }
+
+  50% {
+    text-shadow: 5px 5px 3px var(--primary), 15px 15px 3px var(--purple2),
+      -10px -10px 3px var(--pink);
+  }
+  80% {
+    text-shadow: 1px 1px 3px var(--primary), 3px 3px 3px var(--purple2), -2px -2px 3px var(--pink);
+  }
+  100% {
+    text-shadow: 0px 0px 3px var(--primary), 0px 0px 3px var(--purple2), 0 0 3px var(--pink);
+  }
+} */
+
+@keyframes poof {
+  0% {
+    opacity: 0;
+    z-index: -1;
+    display: none;
+  }
+  5% {
+    z-index: 999999;
+    opacity: 0;
+    visibility: visible;
+  }
+  50% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    z-index: -1;
+    display: none;
+  }
+}

@@ -1,0 +1,8 @@
+{
+    "version": 2,
+    "env": {
+    },
+    "buildCommand": "npm run build",
+    "devCommand": "npm run hotloader2",
+    "outputDirectory": "client/dist"
+}

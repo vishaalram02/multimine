@@ -1,0 +1,70 @@
+.cell {
+  height: 100%;
+}
+
+.block {
+  background-image: url("../../public/images/block.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.empty {
+  background-image: url("../../public/images/empty.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.mine {
+  background-image: url("../../public/images/mine.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.flag {
+  background-image: url("../../public/images/flagged.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.num-1 {
+  background-image: url("../../public/images/one.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.num-2 {
+  background-image: url("../../public/images/two.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.num-3 {
+  background-image: url("../../public/images/three.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.num-4 {
+  background-image: url("../../public/images/four.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.num-5 {
+  background-image: url("../../public/images/five.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.num-6 {
+  background-image: url("../../public/images/six.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.num-7 {
+  background-image: url("../../public/images/seven.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.num-8 {
+  background-image: url("../../public/images/eight.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.golden {
+  background-image: url("../../public/images/pixil-frame-0.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,32 @@
+.SingleMessage-container {
+  margin: 0 0 var(--xs);
+}
+
+.SingleMessage-sender {
+  width: 106px;
+  margin-right: var(--xs);
+  flex-shrink: 0;
+}
+
+
+.SingleMessage-mine .SingleMessage-content {
+  background: var(--primary--dim);
+  color: var(--white);
+}
+
+.Chatbook-container .messageyeet {
+  border-radius: var(--s);
+  padding-left: 8px;
+  width: 19vw;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+.Chatbook-container-2 .messageyeet {
+  border-radius: var(--s);
+  padding-left: 5px;
+  width: 18vw;
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
